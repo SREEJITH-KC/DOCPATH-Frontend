@@ -1,20 +1,30 @@
-import './App.css';
-import Doclogo from './assets/DOCPATH.png';
-import { Signup } from './components/Signup';
+ 
+import { BrowserRouter as Router,Route, Navigate,Routes} from "react-router-dom";
+import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import Login from "./pages/login/Login";
+import Option from "./pages/login-Option/Option";
+import Register from "./pages/register/Register";
 
 function App() {
   return (
-    <div className="container mt-3">
-      <div className="row">
-      <div className="col-md-7 my-auto">
-          <img className="img-fluid w-100" src={Doclogo} alt=""/>
-        </div>
-        <div className="col-md-5">
-          <Signup />
-        </div>
-       
-      </div>
-    </div>
+  <div>
+
+    <Router>
+    {/* <Navbar/> */}
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/register" element={<Register />} />
+    <Route path="/option" element={<Option/>}/> 
+    <Route path="/login" element={<Login/>}> 
+    
+    </Route>
+    </Routes>
+    </Router>
+   
+
+  
+  </div>
   );
 }
 
