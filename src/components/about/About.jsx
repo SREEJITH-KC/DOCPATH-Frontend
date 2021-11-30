@@ -1,11 +1,11 @@
 import React from 'react'
 import './About.css'
-
+import abouti from './1about.png';
 
 function About() {
     return (
         <><div>
-            <img src="1about.png" alt="" />
+             <img className="img-fluid w-100" src={abouti} alt=""/>
 
         </div>
         <div className="text" >
