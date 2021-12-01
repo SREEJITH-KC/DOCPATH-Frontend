@@ -1,13 +1,18 @@
 import React from 'react'
+import Navbar from '../navbar/Navbar'
 import './About.css'
+import aboutus from './about.png'
 
 
 function About() {
     return (
-        <><div>
-            <img src="1about.png" alt="" />
-
-        </div>
+        <>
+        <Navbar />
+           <div >
+            <img src= {aboutus} alt="img"  />
+            </div>
+            
+        
         <div className="text" >
                 <p >DocPath is an Indian startup company, established in 2021 in India. <br/>
                     In this covid situations, we are helping people to take the appoitments of verified and trusted
@@ -26,7 +31,32 @@ function About() {
 
                     we simply connect you to doctors from our application.
                 </p>
-            </div></>
+            </div>
+            <div >
+            <table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Tejas </td>
+    <td>ABC@gmail.com</td>
+    <td>9000000000</td>
+  </tr>
+  <tr>
+    <td>Sai Teja</td>
+    <td>Sai@gmail.com</td>
+    <td>9000000001</td>
+  </tr>
+  <tr>
+    <td>Shreejith</td>
+    <td>Sree@gmail.com</td>
+    <td>9000000002</td>
+  </tr>
+</table>
+            </div>
+            </>
     )
 }
 

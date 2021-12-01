@@ -3,13 +3,9 @@ function Header(){
     return(
         <div className="container-fluid">
             <ul class="nav justify-content-end"> 
+                
                 <li class="nav-item"> 
-                    <a class="nav-link" href="#">
-                        <h3>SignIn</h3>
-                    </a>
-                </li> 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="/about">
                         <h3>Contact-us</h3>
                     </a> 
                 </li>

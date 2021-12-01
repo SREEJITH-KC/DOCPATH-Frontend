@@ -1,61 +1,61 @@
-// import { Link } from "react-router-dom";
-// import "./Login.css";
+import React, { useState } from 'react';
+import './Login.css'
+import { Link, useNavigate } from "react-router-dom";
+import Navbar from '../../components/navbar/Navbar';
+//import { auth } from "./firebase";
 
-export default function Login() {
-   return (
-//     <div classNameName="login">
-//       <div classNameName="container">
-//         <div classNameName="left">
-//           <img src="" alt="" />
-//         </div>
-//         <div classNameName="right">
-          
-//         </div>
-//       </div>
-//       <span classNameName="loginTitle">Login</span>
-//       <form classNameName="loginForm" >
-//         <label>Username</label>
-//         <input
-//           type="text"
-//           classNameName="loginInput"
-//           placeholder="Enter your username..."
-//         />
-//         <label>Password</label>
-//         <input
-//           type="password"
-//           classNameName="loginInput"
-//           placeholder="Enter your password..."
-//         />
-//         <button classNameName="loginButton" type="submit" >
-//           Login
-//         </button>
-//       </form>
-//       <button classNameName="loginRegisterButton">
-//         <Link classNameName="link" >
-//           Register
-//         </Link>
-//       </button>
-//     </div>
-<form>
-  <div className="container"><h1>Login to your account</h1>
-  <div className="mb-3">
-    <label for="exampleInputEmail1" className="form-label">Email address/mobile number</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div className="mb-3">
-    <label for="exampleInputPassword1" className="form-label">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"/>
-  </div>
-  <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-    <label className="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" className="btn btn-primary">Signin</button>
-  <a href=""><h6>forgot-password</h6></a>
-  <h5> Need an account ? <a href="/register">sign-up</a> </h5>
-  </div>
-  
-</form>
-  );
+function Login() {
+    const navigate = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const signIn = e => {
+        e.preventDefault();
+
+    //     auth
+    //         .signInWithEmailAndPassword(email, password)
+    //         .then(auth => {
+    //             navigate('/')
+    //         })
+    //         .catch(error => alert(error.message))
+     }
+
+    const register = e => {
+        e.preventDefault();
+
+    //     auth
+    //         .createUserWithEmailAndPassword(email, password)
+    //         .then((auth) => {
+    //             // it successfully created a new user with email and password
+    //             if (auth) {
+    //                 navigate('/')
+    //             }
+    //         })
+    //         .catch(error => alert(error.message))
+     }
+
+    return (
+      <>
+      <Navbar />
+        <div className='login'>
+            <div className='login__container'>
+                <h1>Sign-in</h1>
+
+                <form>
+                    <h5>E-mail</h5>
+                    <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
+
+                    <h5>Password</h5>
+                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
+
+                    <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
+                </form>
+
+                <button onClick={register} className='login__registerButton'>Create your Account</button>
+            </div>
+        </div>
+        </>
+    )
 }
+    
+export default Login ;

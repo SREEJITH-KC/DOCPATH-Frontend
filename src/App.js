@@ -8,14 +8,14 @@ import Register from "./pages/register/Register";
 import About from "./components/about/About";
 
 function App() {
-  return (
-  <div>
+  return(
+  
 
     <Router>
     {/* <Navbar/> */}
     <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/register" element={<Register />} />
+    {/* <Route path="/register" element={<Register />} /> */}
     <Route path="/option" element={<Option/>}/> 
     <Route path="/login" element={<Login/>} /> 
     <Route path="/about" element={<About/>}/> 
@@ -23,10 +23,7 @@ function App() {
     
     </Routes>
     </Router>
-   
 
-  
-  </div>
   );
 }
 
