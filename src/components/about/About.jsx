@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Navbar from '../navbar/Navbar'
 import './About.css'
@@ -61,3 +62,6 @@ function About() {
 }
 
 export default About
+
+
+
