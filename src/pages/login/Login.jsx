@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Login.css'
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from '../../components/navbar/Navbar';
-import Register from '../register/Register';
 import Footer from '../footer/Footer';
 //import { auth } from "./firebase";
 
@@ -22,7 +21,20 @@ function Login() {
     //         .catch(error => alert(error.message))
      }
 
-    
+    const register = e => {
+        e.preventDefault();
+
+    //     auth
+    //         .createUserWithEmailAndPassword(email, password)
+    //         .then((auth) => {
+    //             // it successfully created a new user with email and password
+    //             if (auth) {
+    //                 navigate('/')
+    //             }
+    //         })
+    //         .catch(error => alert(error.message))
+     }
+
     return (
       <>
       <Navbar />
@@ -40,7 +52,7 @@ function Login() {
                     <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
                 </form>
 
-                
+                <button onClick={register} className='login__registerButton'>Create your Account</button>
             </div>
         </div>
        <Footer />
