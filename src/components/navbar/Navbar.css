@@ -109,3 +109,11 @@
     margin-left: 15px;
   }
   
+  .search-container {
+    float: right;
+  }
+
+  .container-fluid h5{
+    padding-left: 200px;
+    color: white;
+  }

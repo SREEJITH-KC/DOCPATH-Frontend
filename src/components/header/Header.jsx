@@ -4,17 +4,17 @@ import "./header.css"
 import patp from './Docpathp.jpg'
 import docd from './Docpathd.jpg'
 import hosh from './Docpathh.jpg'
-import Navbar from '../../components/navbar/Navbar';
+
 function Header(){
     return(
         <>
         <Navbar />
         <div className="container-fluid">
-            <Navbar />
+            
             <div className="row" id="row3">
                 
                 <div className="col">
-                    <img className="img-fluid w-55 " src="Docpath.jpeg" alt="" />
+                    <img className="img-fluid w-30 " src="Docpath.jpeg" alt="" />
                 </div>
                 <div className="col">
                     <div className="column">
