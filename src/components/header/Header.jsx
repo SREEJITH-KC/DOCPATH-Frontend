@@ -1,15 +1,12 @@
+import Footer from "../../pages/footer/Footer";
+import Navbar from "../navbar/Navbar";
 import "./header.css"
 function Header(){
     return(
+        <>
+        <Navbar />
         <div className="container-fluid">
-            <ul class="nav justify-content-end"> 
-                
-                <li class="nav-item"> 
-                    <a class="nav-link" href="/about">
-                        <h3>Contact-us</h3>
-                    </a> 
-                </li>
-             </ul> 
+             
              
             <div className="row" id="row3">
                 
@@ -27,6 +24,8 @@ function Header(){
                 </div>
             </div>
         </div>
+        <Footer />
+        </>
     )
 }
 export default Header;

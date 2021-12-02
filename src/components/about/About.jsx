@@ -1,5 +1,6 @@
 
 import React from 'react'
+import Footer from '../../pages/footer/Footer'
 import Navbar from '../navbar/Navbar'
 import './About.css'
 import aboutus from './about.png'
@@ -57,6 +58,7 @@ function About() {
   </tr>
 </table>
             </div>
+            <Footer />
             </>
     )
 }
