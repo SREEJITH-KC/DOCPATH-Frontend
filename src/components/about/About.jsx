@@ -10,7 +10,7 @@ function About() {
         <>
         <Navbar />
            <div >
-            <img src= {aboutus} alt="img"  />
+            <img src= {aboutus} class="float-left" alt="img"  />
             </div>
             
         

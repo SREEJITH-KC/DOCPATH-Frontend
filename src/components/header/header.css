@@ -30,13 +30,13 @@ h4{
 img{
     height: 200px;
     width: 600px;
-margin-top: 20px;
+margin-top: 20px; 
 }
 ul{
     background-color: #080203;
 }
 #row3{
-    background-color:rgb(6, 33, 61);
+    background-color:#DFD8CA;
 }
 .row4{
     background-color: orchid;

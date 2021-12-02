@@ -35,6 +35,7 @@ export const Signup = () => {
         email: '',
         PhoneNumber: '',
         Address: '',
+        State: '',
         City: '',
       }}
       validationSchema={validate}
@@ -52,7 +53,9 @@ export const Signup = () => {
             <TextField label="Email" name="email" type="email" />
             <TextField label="PhoneNumber" name="PhoneNumber" type="text" />
             <TextField label="Address" name="Address" type="text" />
-            <TextField label="City" name="City" type="text" />
+            <TextField label="State" name="State" type="text" />
+            <TextField label="City" name="city" type="text" />
+
             
             <button className="btn btn-dark mt-3" type="submit" >SAVE</button>
             <button className="btn btn-danger mt-3 ml-3" type="reset">Reset</button>
