@@ -47,11 +47,7 @@ export default function Navbar() {
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/about">Contact</a>
-          </li>
-        
+        </li>    
       </ul>
      
       <form className="d-flex">
@@ -60,7 +56,19 @@ export default function Navbar() {
       </form>
       <ul class="nav justify-content-end"> 
                 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="/register">
+                        <h3>SignUp</h3>
+                    </a> 
+                </li>
+             </ul>
+      <ul class="nav justify-content-end"> 
                 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="/about">
+                        <h3>Contact-us</h3>
+                    </a> 
+                </li>
              </ul>
     </div>
   </div>
