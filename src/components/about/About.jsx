@@ -37,7 +37,7 @@ function About() {
             <div >
             <table>
   <tr>
-    <th>Name</th>
+    <th>NAME</th>
     <th>Email</th>
     <th>Contact</th>
   </tr>
